@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excursii în Hurghada | Hurghada Trips</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #FFDEE9, #B5FFFC);
+      color: #333;
+    }
+    header {
+      background-color: #FF6F61;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #FFA07A;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #FF7F50;
+      transition: 0.3s;
+    }
+    .lang-btn {
+      margin: 5px;
+      padding: 5px 10px;
+      background-color: #FF6F61;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .lang-btn:hover { background-color: #FF4C3B; }
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #FF6F61;
+      margin-bottom: 20px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea, button {
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      background-color: #FF6F61;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover { background-color: #FF4C3B; }
+    footer {
+      background-color: #FF6F61;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Excursii în Hurghada | Hurghada Trips</h1>
+    <p>Aventura, relaxare și cultură pe malul Mării Roșii | Adventure, relaxation, and culture on the Red Sea</p>
+    <div style="text-align:center; margin-top:10px;">
+      <button class="lang-btn" onclick="showLang('ro')">RO</button>
+      <button class="lang-btn" onclick="showLang('en')">EN</button>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#mare">Pe Mare | Sea Trips</a>
+    <a href="#desert">Safari în Deșert | Desert Safari</a>
+    <a href="#cultura">Excursii Culturale | Cultural Trips</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="mare">
+    <h2>Excursii pe mare | Sea Trips</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Insula Giftun">
+        <h3 class="ro">Insula Giftun</h3>
+        <h3 class="en" style="display:none;">Giftun Island</h3>
+        <p class="ro">Snorkeling și plajă cu nisip alb în ape cristaline. Excursie de o zi.</p>
+        <p class="en" style="display:none;">Snorkeling and white sandy beach in crystal-clear waters. One-day trip.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Barcă cu fund de sticlă">
+        <h3 class="ro">Barcă cu fund de sticlă</h3>
+        <h3 class="en" style="display:none;">Glass Bottom Boat</h3>
+        <p class="ro">Vedeți viața marină fără să vă udați. Perfect pentru familii.</p>
+        <p class="en" style="display:none;">See marine life without getting wet. Perfect for families.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="desert">
+    <h2>Safari în deșert | Desert Safari</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1549887534-7b61d8abfcd3" alt="ATV">
+        <h3 class="ro">ATV în deșert</h3>
+        <h3 class="en" style="display:none;">ATV in the Desert</h3>
+        <p class="ro">Aventura de 3 ore pe dune și trasee spectaculoase.</p>
+        <p class="en" style="display:none;">3-hour adventure on dunes and scenic trails.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1598387840206-6e3a6f57ef87" alt="Jeep Safari">
+        <h3 class="ro">Jeep Safari</h3>
+        <h3 class="en" style="display:none;">Jeep Safari</h3>
+        <p class="ro">Explorează deșertul, satul beduin și plimbări cu cămila.</p>
+        <p class="en" style="display:none;">Explore the desert, Bedouin village, and camel rides.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cultura">
+    <h2>Excursii culturale | Cultural Trips</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1569202939571-5a1bfb2f6f60" alt="Cairo">
+        <h3 class="ro">Cairo</h3>
+        <h3 class="en" style="display:none;">Cairo</h3>
+        <p class="ro">Piramidele din Giza, Sfinxul și Muzeul Egiptean.</p>
+        <p class="en" style="display:none;">Giza Pyramids, Sphinx, and Egyptian Museum.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1556882182-98d86e1984e2" alt="Luxor">
+        <h3 class="ro">Luxor</h3>
+        <h3 class="en" style="display:none;">Luxor</h3>
+        <p class="ro">Valea Regilor, Templul Karnak și Colosii din Memnon.</p>
+        <p class="en" style="display:none;">Valley of the Kings, Karnak Temple, and Colossi of Memnon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Nume | Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Mesaj | Message" required></textarea>
+      <button type="submit">Trimite | Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Excursii în Hurghada | Hurghada Trips | Toate drepturile rezervate</p>
+  </footer>
+
+  <script>
+    function showLang(lang) {
+      document.querySelectorAll('.ro').forEach(e => e.style.display = lang==='ro'?'block':'none');
+      document.querySelectorAll('.en').forEach(e => e.style.display = lang==='en'?'block':'none');
+    }
+  </script>
+
+</body>
+</html>
